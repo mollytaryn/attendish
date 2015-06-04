@@ -78,8 +78,3 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: attendish_production
-  username: attendish
-  password: <%= ENV['ATTENDISH_DATABASE_PASSWORD'] %>
