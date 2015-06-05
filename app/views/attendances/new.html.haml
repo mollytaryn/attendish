@@ -1,0 +1,8 @@
+%h1 Roll call!
+
+%p.notice= notice
+
+= simple_form_for @attendances do |f|
+  = f.input :student_id, collection: @students
+  = f.input :present?, as: :boolean, checked_value: true, unchecked_value: false
+  = f.button :submit, "Submit"
