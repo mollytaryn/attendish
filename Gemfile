@@ -48,6 +48,8 @@ group :development, :test do
   gem 'spring'
   gem 'fabrication'
   gem 'faker'
+  gem 'launchy'
+
 
   gem 'rspec-rails'
   gem 'shoulda-matchers'

@@ -1,0 +1,5 @@
+%h1 Select Present Students
+
+%select{:name => "Students"}
+  - StudentsController.new.list_all.each do |student|
+    %option #{student.name}
